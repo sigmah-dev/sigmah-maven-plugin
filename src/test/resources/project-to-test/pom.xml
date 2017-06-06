@@ -1,0 +1,93 @@
+<!--
+	// ### COPYRIGHT NOTICE ###
+	//
+	// All Sigmah Maven Plugin code is released under the GNU General Public License v3 (GPL-3).
+	// See COPYRIGHT and LICENSE.
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.sigmah.maven.test</groupId>
+	<artifactId>maven-sigmah-plugin-test</artifactId>
+	<version>0.0-Test</version>
+
+	<packaging>jar</packaging>
+
+	<name>Test Sigmah Mojo</name>
+	<description>Test description.</description>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.sigmah</groupId>
+				<artifactId>sigmah-maven-plugin</artifactId>
+				<version>1.0.0</version>
+				<configuration>
+					<version>
+						<number>2.0</number>
+						<name>Brahmapoutre</name>
+						<date>07/2014</date>
+					</version>
+					<valuesSeparator>;</valuesSeparator>
+					<fieldsSeparator>,</fieldsSeparator>
+					<managers>
+						<manager>
+							<name>Coop\u00E9rative de pilotage</name>
+							<url>http\://www.sigmah.org</url>
+						</manager>
+						<manager>
+							<name>Groupe URD</name>
+							<url>http\://www.urd.org</url>
+						</manager>
+					</managers>
+					<partners>
+						<!-- Available roles: (developer, ergonomist, designer). -->
+						<partner>
+							<name>IDEIA</name>
+							<role>developer</role>
+							<url>http://www.ideia.fr</url>
+						</partner>
+						<partner>
+							<name>Adergo</name>
+							<role>ergonomist</role>
+							<url>http://www.adergo.com</url>
+						</partner>
+						<partner>
+							<name>Philippe Rouanet</name>
+							<role>designer</role>
+							<url>http://www.philipperouanet.com</url>
+						</partner>
+					</partners>
+					<developers>
+						<developer>
+							<name>Tom Miette</name>
+							<email>tmiette@ideia.fr</email>
+						</developer>
+						<developer>
+							<name>Denis Colliot</name>
+							<email>dcolliot@ideia.fr</email>
+						</developer>
+						<developer>
+							<name>Raphaël Calabro</name>
+							<email>rcalabro@ideia.fr</email>
+						</developer>
+					</developers>
+					<contributors>
+						<contributor>
+							<name>Olivier Sarrat</name>
+							<email>osarrat@urd.org</email>
+						</contributor>
+						<contributor>
+							<name>Oussama Mojahed</name>
+							<email>omojahed@ideia.fr</email>
+						</contributor>
+					</contributors>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
